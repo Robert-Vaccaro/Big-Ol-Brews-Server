@@ -1,0 +1,6 @@
+{
+  "name": "Big Ol' Brews",
+  "description": "Sample app built with React and the Lightning Design System",
+  "repository": "https://github.com/Robert-Vaccaro/Big-Ol-Brews",
+  "addons": ["heroku-postgresql:hobby-dev"]
+}
