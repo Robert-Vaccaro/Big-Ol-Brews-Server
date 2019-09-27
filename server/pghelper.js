@@ -2,7 +2,7 @@
 
 let pg = require('pg'),
     config = require('./config'),
-    databaseURL = config.databaseURL;
+    DATABASE_URL = config.DATABASE_URL;
 
 exports.query = function (sql, values, singleItem, dontLog) {
 
@@ -12,7 +12,7 @@ exports.query = function (sql, values, singleItem, dontLog) {
 
     return new Promise((resolve, reject) => {
 
-        pg.connect(databaseURL, function (err, conn, done) {
+        pg.connect(DATABASE_URL, function (err, conn, done) {
             if (err) return reject(err);
             try {
                 conn.query(sql, values, function (err, result) {
