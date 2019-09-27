@@ -60,7 +60,7 @@ class App extends React.Component {
     render() {
         return (
             <div>
-                <Header text="Belgian Beer Explorer"/>
+                <Header text="Big Ol' Brews"/>
                 <div className="slds-grid slds-p-top--small slds-grid--align-center">
                     <div className="slds-col">
                         <SearchBar searchKey={this.state.searchKey} onChange={this.searchKeyChangeHandler.bind(this)}/>
