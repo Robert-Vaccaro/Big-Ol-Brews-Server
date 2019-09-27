@@ -156,7 +156,7 @@
 	            return _react2.default.createElement(
 	                'div',
 	                null,
-	                _react2.default.createElement(_Header2.default, { text: 'Belgian Beer Explorer' }),
+	                _react2.default.createElement(_Header2.default, { text: "Big Ol' Brews" }),
 	                _react2.default.createElement(
 	                    'div',
 	                    { className: 'slds-grid slds-p-top--small slds-grid--align-center' },
