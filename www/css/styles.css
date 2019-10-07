@@ -11,7 +11,12 @@ a:hover {
     border-top: solid 1px #EEE;
     color: #4F6A92;
 }
-
+.heading{
+    font-size: 108px;
+}
+.introduction{
+    font-size: 48px;
+}
 .level {
     opacity: 1;
     height: 32px;

@@ -156,7 +156,7 @@
 	            return _react2.default.createElement(
 	                'div',
 	                null,
-	                _react2.default.createElement(_Header2.default, { text: "Big Ol' Brews" }),
+	                _react2.default.createElement(_Header2.default, { text: 'yo' }),
 	                _react2.default.createElement(
 	                    'div',
 	                    { className: 'slds-grid slds-p-top--small slds-grid--align-center' },
@@ -22558,8 +22558,12 @@
 	                        { className: "slds-col" },
 	                        _react2.default.createElement(
 	                            "h1",
-	                            { className: "slds-page-header__title slds-truncate" },
-	                            this.props.text
+	                            { className: "heading" },
+	                            _react2.default.createElement(
+	                                "u",
+	                                null,
+	                                "Big Ol' Brews"
+	                            )
 	                        )
 	                    ),
 	                    _react2.default.createElement(
@@ -22569,6 +22573,64 @@
 	                            "a",
 	                            { href: "https://github.com/Robert-Vaccaro/Big-Ol-Brews" },
 	                            _react2.default.createElement("img", { src: "pics/GitHub-Mark-Light-32px.png" })
+	                        )
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    "div",
+	                    { className: "introduction" },
+	                    _react2.default.createElement(
+	                        "h2",
+	                        null,
+	                        "The only database you need to find your the beer of your dreams! Here you will be able to search a massive database of all the beers in Belgium."
+	                    ),
+	                    _react2.default.createElement(
+	                        "div",
+	                        null,
+	                        _react2.default.createElement("br", null),
+	                        _react2.default.createElement(
+	                            "h2",
+	                            null,
+	                            _react2.default.createElement(
+	                                "u",
+	                                null,
+	                                "You can search by:"
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            "h2",
+	                            null,
+	                            "-The name of the beer"
+	                        ),
+	                        _react2.default.createElement(
+	                            "h2",
+	                            null,
+	                            "-The type of beer"
+	                        ),
+	                        _react2.default.createElement(
+	                            "h2",
+	                            null,
+	                            "-The name of the brewery"
+	                        ),
+	                        _react2.default.createElement("br", null),
+	                        _react2.default.createElement(
+	                            "h2",
+	                            null,
+	                            _react2.default.createElement(
+	                                "u",
+	                                null,
+	                                "Helpful Hints:"
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            "h2",
+	                            null,
+	                            "-You can use the slider below the search bar to filter the beers by alcohol content."
+	                        ),
+	                        _react2.default.createElement(
+	                            "h2",
+	                            null,
+	                            "-You can click on the information below and it will filter based on what you clicked."
 	                        )
 	                    )
 	                )
