@@ -4,10 +4,12 @@
   "description": "Big-Ol-Brews",
   "main": "server.js",
   "scripts": {
-    "webpack": "webpack",
     "start": "node server.js",
     "migrate": "postgrator --config postgrator-config.js",
-    "migrate:production": "env DATABASE_URL=$(heroku config:get DATABASE_URL) npm run migrate"
+    "migrate:production": "env DATABASE_URL=$(heroku config:get DATABASE_URL) npm run migrate",
+    "debug": "ndb node server",
+    "dev": "nodemon server",
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -22,16 +24,28 @@
     "compression": "^1.6.2",
     "express": "^4.14.0",
     "path": "^0.12.7",
-    "pg": "^6.0.2"
+    "pg": "^6.0.2",
+    "chai": "^4.2.0",
+    "chia": "0.0.1",
+    "mocha": "^6.2.0",
+    "moment": "^2.24.0",
+    "ndb": "^1.1.4",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-scripts": "3.1.1",
+    "supertest": "^4.0.2"
   },
   "devDependencies": {
     "babel-core": "^6.10.4",
     "babel-loader": "^6.4.1",
     "babel-preset-es2015": "^6.9.0",
     "babel-preset-react": "^6.11.1",
+    "chai": "^4.2.0",
+    "mocha": "^6.2.1",
     "react": "^15.2.0",
     "react-dom": "^15.2.0",
     "react-slider": "^0.6.1",
+    "supertest": "^4.0.2",
     "webpack": "^1.15.0"
   }
 }
