@@ -10,3 +10,4 @@ describe('GET /products', () => {
           .expect('Content-Type', /json/)
         })
     });
+    
