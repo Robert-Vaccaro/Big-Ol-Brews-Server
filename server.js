@@ -4,9 +4,15 @@ let express = require('express'),
     compression = require('compression'),
     products = require('./server/products'),
     app = express();
+const morgan = require('morgan')
+const helmet = require('helmet')
+const morganOption = (NODE_ENV === 'production')
+  ? 'tiny'
+  : 'common';
 
 app.set('port', process.env.PORT || 5000);
-
+app.use(morgan(morganOption))
+app.use(helmet())
 app.use(compression());
 
 app.use('/', express.static(__dirname + '/www'));
@@ -28,7 +34,6 @@ app.all('*', function (req, res, next) {
 
 app.get('/products', products.findAll);
 app.get('/products/:id', products.findById);
-
-app.listen(app.get('port'), function () {
-    console.log('Express server listening on port ' + app.get('port'));
-});
+app.get('/', (req, res) => {
+    res.send('Howdy, boilerplate')
+  })
