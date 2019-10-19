@@ -6,6 +6,8 @@ The back-end is built with **Node.js** using a **Postgres** database.
 
 Here is the [live demo](https://lit-fjord-25639.herokuapp.com/)!
 
+Here is the Client [README.md file](https://github.com/Robert-Vaccaro/Big-Ol-Brews-Client/blob/master/README.md)
+
 
 ## Local Installation
 
