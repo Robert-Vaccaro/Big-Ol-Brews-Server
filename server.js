@@ -34,6 +34,6 @@ app.all('*', function (req, res, next) {
 
 app.get('/products', products.findAll);
 app.get('/products/:id', products.findById);
-app.get('/', (req, res) => {
-    res.send('Howdy, boilerplate')
-  })
+app.listen(app.get('port'), function () {
+    console.log("Howdy, boilerplate");
+});
