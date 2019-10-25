@@ -11,3 +11,13 @@ describe('GET /products', () => {
         })
     });
     
+
+describe('GET /products/:id', () => {
+    it('should return an array of beer IDs', () => {
+        return request(app)
+          .get('/products/:id')
+          .expect(200)
+          .expect('Content-Type', /json/)
+        })
+    });
+    
