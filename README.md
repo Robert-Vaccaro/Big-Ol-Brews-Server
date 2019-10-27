@@ -45,3 +45,72 @@ Follow the instructions below if you prefer to install the application on your l
     The database is automatically populated
     
 1. Open a browser and access [http://localhost:5000](http://localhost:5000)
+
+**Show User**
+----
+**Displaying Beers**
+
+  Returns data showing all of the beers.
+
+* **URL**
+
+  `/products` <br />
+  `/products/:id`
+
+* **Method:**
+
+  `GET`
+  
+*  **URL Params**
+
+   **Required:**
+ 
+   `id=[integer]`
+
+* **Data Params**
+
+  None
+
+* **Success Response:**
+
+  * **Code:** 200 <br />
+    **Content:** `{ id : 12, name : "Abbaye d'Aulne Brune des Pères 6" }`
+ 
+* **Error Response:**
+
+  * **Code:** 404 NOT FOUND <br />
+    **Content:** `{ error : "Beer doesn't exist" }`
+
+* **Sample Call:**
+
+  ```React.js
+    export default opts => {
+        return new Promise((resolve, reject) => {
+            let xhr = new XMLHttpRequest();
+            xhr.open(opts.method || "GET", opts.url);
+            xhr.onload = () => {
+                if (xhr.status >= 200 && xhr.status < 300) {
+                    resolve(xhr.response);
+                } else {
+                    reject({
+                        status: this.status,
+                        statusText: xhr.statusText
+                    });
+                }
+            };
+            xhr.onerror = () => {
+                reject({
+                    status: this.status,
+                    statusText: xhr.statusText
+                });
+            };
+            if (opts.headers) {
+                Object.keys(opts.headers).forEach(key => {
+                    xhr.setRequestHeader(key, opts.headers[key]);
+                });
+            }
+
+            xhr.send(opts.data);
+        });
+    }
+  ```
