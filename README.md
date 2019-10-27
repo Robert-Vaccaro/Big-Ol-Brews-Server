@@ -50,7 +50,7 @@ Follow the instructions below if you prefer to install the application on your l
 ----
 **Displaying Beers**
 
-  Returns data showing all of the beers in the [SQL database](https://github.com/Robert-Vaccaro/Big-Ol-Brews-Server/blob/master/beers.sql)
+  Returns information about each beer in this [SQL database](https://github.com/Robert-Vaccaro/Big-Ol-Brews-Server/blob/master/beers.sql).
 
 * **URL**
 
