@@ -46,7 +46,7 @@ Follow the instructions below if you prefer to install the application on your l
     
 1. Open a browser and access [http://localhost:5000](http://localhost:5000)
 
-**Show User**
+**API Documentation**
 ----
 **Displaying Beers**
 
