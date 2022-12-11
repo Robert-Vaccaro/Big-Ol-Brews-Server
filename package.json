@@ -22,7 +22,7 @@
   "homepage": "https://github.com/Robert-Vaccaro/Big-Ol-Brews",
   "dependencies": {
     "compression": "^1.6.2",
-    "express": "^4.14.0",
+    "express": "^4.17.3",
     "path": "^0.12.7",
     "pg": "^6.0.2",
     "chai": "^4.2.0",
